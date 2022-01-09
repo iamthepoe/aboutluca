@@ -7,11 +7,12 @@
 </head>
 <body>
 	<header class="cabecalho">
-		<a class="cabecalho-menu-logo"><img src="assets/images/logo.png"></a>
+
+		<a class="cabecalho-menu-logo" href="#"><img src="assets/images/logo.png"></a>
 		<nav class="cabecalho-menu">
 			<ul class="cabecalho-menu-lista">
-				<li class="cabecalho-menu-lista-item"><a href="#">Sobre mim</a></li>
-				<li class="cabecalho-menu-lista-item"><a href="#">Item 2</a></li>
+				<li class="cabecalho-menu-lista-item"><a href="#sobremim">Sobre mim</a></li>
+				<li class="cabecalho-menu-lista-item"><a href="#pensadores">Influências</a></li>
 				<li class="cabecalho-menu-lista-item"><a href="#">Item 3</a></li>
 				<li class="cabecalho-menu-lista-item"><a href="#">Item 4</a></li>
 				<li class="cabecalho-menu-lista-item"><a href="#">Item 5</a></li>
@@ -19,7 +20,7 @@
 			</ul>
 		</nav>
 	</header>
-	<section class="sobremim">
+	<section class="sobremim" id="sobremim">
 		
 		<h1>Sobre mim</h1>
 		<div class="sobremim-textbox">
@@ -38,10 +39,12 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>
+		
 	</section>
 	<section class="escritores-pensadores">
-		<!--Kant, Platão, Aristóteles | Naoki Urasawa, Hiromu Arakawa -->
+		
 		<div class="escritores-pensadores-container">
+			<h1>Pensadores que me influenciam/influenciaram.</h1>
 			<div class="escritores-pensadores-container-painel"  onmouseenter="TrocarImagem(thinkerclasses[0], thinkergif[0])" onmouseleave="VoltarImagem(thinkerclasses[0], thinkerimg[0])">
 				<img src="assets/images/thinker01.png" class="escritores-pensadores-container-painel-imagem">
 				<div class="nome-pensador">
@@ -54,31 +57,31 @@
 					<p>Immanuel Kant</p>
 				</div>
 			</div>
-			<div class="escritores-pensadores-container-painel">
-				<img src="assets/images/thinker02.gif" class="escritores-pensadores-container-painel-imagem">
+			<div class="escritores-pensadores-container-painel" onmouseenter="TrocarImagem(thinkerclasses[2], thinkergif[2])" onmouseleave="VoltarImagem(thinkerclasses[2], thinkerimg[2])">
+				<img src="assets/images/thinker03.png" class="escritores-pensadores-container-painel-imagem">
 				<div class="nome-pensador">
-					<p>Immanuel Kant</p>
-				</div>
-			</div>
-			<div class="escritores-pensadores-container-painel">
-				<img src="assets/images/thinker02.gif" class="escritores-pensadores-container-painel-imagem">
-				<div class="nome-pensador">
-					<p>Immanuel Kant</p>
-				</div>
-			</div>	
-			<div class="escritores-pensadores-container-painel">
-				<img src="assets/images/thinker02.gif" class="escritores-pensadores-container-painel-imagem">
-				<div class="nome-pensador">
-					<p>Immanuel Kant</p>
-				</div>
-			</div>
-			<div class="escritores-pensadores-container-painel">
-				<img src="assets/images/thinker02.gif" class="escritores-pensadores-container-painel-imagem">
-				<div class="nome-pensador">
-					<p>Immanuel Kant</p>
+					<p>Aristóteles</p>
 				</div>
 			</div>
 
+			<div class="escritores-pensadores-container-painel" onmouseenter="TrocarImagem(thinkerclasses[3], thinkergif[3])" onmouseleave="VoltarImagem(thinkerclasses[3], thinkerimg[3])">
+				<img src="assets/images/thinker04.png" class="escritores-pensadores-container-painel-imagem">
+				<div class="nome-pensador">
+					<p>René Descartes</p>
+				</div>
+			</div>	
+			<div class="escritores-pensadores-container-painel" onmouseenter="TrocarImagem(thinkerclasses[4], thinkergif[4])" onmouseleave="VoltarImagem(thinkerclasses[4], thinkerimg[4])">
+				<img src="assets/images/thinker05.png" class="escritores-pensadores-container-painel-imagem">
+				<div class="nome-pensador">
+					<p>Wilfrid Sellars</p>
+				</div>
+			</div>
+			<div class="escritores-pensadores-container-painel" onmouseenter="TrocarImagem(thinkerclasses[5], thinkergif[5])" onmouseleave="VoltarImagem(thinkerclasses[5], thinkerimg[5])">
+				<img src="assets/images/thinker06.png" class="escritores-pensadores-container-painel-imagem">
+				<div class="nome-pensador">
+					<p>Samuel Edward Konkin III</p>
+				</div>
+			</div>
 		</div>
 		
 	</section>

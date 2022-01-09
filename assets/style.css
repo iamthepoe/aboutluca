@@ -65,10 +65,14 @@ section{
     align-items: center;
 }
 
-.sobremim > h1{
+
+h1{
     z-index: 1;
+    margin-top: 10px;
     position: absolute;
     align-self: stretch;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-family: 'Josefin Sans', sans-serif;
 
 }
 
