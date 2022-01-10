@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Sobre mim - Luca Poe</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 </head>
 <body>
 	<header class="cabecalho">
@@ -13,36 +14,26 @@
 			<ul class="cabecalho-menu-lista">
 				<li class="cabecalho-menu-lista-item"><a href="#sobremim">Sobre mim</a></li>
 				<li class="cabecalho-menu-lista-item"><a href="#pensadores">Influências</a></li>
-				<li class="cabecalho-menu-lista-item"><a href="#">Item 3</a></li>
-				<li class="cabecalho-menu-lista-item"><a href="#">Item 4</a></li>
-				<li class="cabecalho-menu-lista-item"><a href="#">Item 5</a></li>
-				<li class="cabecalho-menu-lista-item"><a href="#">Item 6</a></li>
+				<li class="cabecalho-menu-lista-item"><a href="#tecnologias">Tecnologias</a></li>
+				<li class="cabecalho-menu-lista-item"><a href="#FAQ">FAQ</a></li>
 			</ul>
 		</nav>
 	</header>
+
 	<section class="sobremim" id="sobremim">
 		
 		<h1>Sobre mim</h1>
 		<div class="sobremim-textbox">
 			
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+			<p>Opa, eu sou o <span style="color:hotpink;">Luca</span>, mais conhecido como "o cara do emoji" ou "o filósofo" (embora esse último título seja atrelado <b>erroneamente</b> à minha pessoa), atualmente um aluno do 2°DES. <br><br>Entrei na ETEC em 2021 com o intuito de aprimorar meus conhecimentos técnicos na área de desenvolvimento de software, entretanto, acabei continuando aqui por outros motivos. A cultura da escola e as conexões que fiz são bem mais valiosas do que qualquer tipo de diploma.<br><br>No tempo livre geralmente estudo filosofia. Tenho interesse nos assuntos de metafísica, epistemologia e filosofia da mente. Levo bem a sério <span style="color:hotpink;">a intelectualidade e a busca pelo conhecimento</span>, isso é o que me move e provavelmente continuará me movendo pelo resto da minha vida.<br><br>Acerca da parte técnica, eu sou relativamente bom com <span style="color:darkgreen;"><b>C#</b></span> (leia-se c-sharp, seus pervertidos) e <span style="color:yellow;">Javascript.</span> Atualmente estudo o stack de Javascript e pretendo dominar suas tecnologias até o final do terceiro ano. Fora isso, tenho boas habilidades com lógica de programação e algoritmos.<br><br>Acho que é isso. Tem mais coisas superficiais sobre mim no final da página, caso queira perder seu tempo =P</p>
+
 		</div>
 		
 	</section>
+
+	
 	<section class="escritores-pensadores">
-		
+		<a id="pensadores"></a>
 		<div class="escritores-pensadores-container">
 			<h1>Pensadores que me influenciam/influenciaram.</h1>
 			<div class="escritores-pensadores-container-painel"  onmouseenter="TrocarImagem(thinkerclasses[0], thinkergif[0])" onmouseleave="VoltarImagem(thinkerclasses[0], thinkerimg[0])">
@@ -83,14 +74,43 @@
 				</div>
 			</div>
 		</div>
-		
 	</section>
-	<section class="animes-livros">
-		<h1>Lorem</h1>
+
+	<section class="tecnologias" >
+
+		<div class="tecnologias-container">
+			<h1 id="tecnologias">Tenho habilidades com:</h1>
+
+			<div class="tecnologias-container-painel"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" class="tecIcon"/></div>
+			<div class="tecnologias-container-painel">
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" class="tecIcon"/>
+			</div>
+			<div class="tecnologias-container-painel">
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"class="tecIcon"/>
+			</div>
+
+			<div class="tecnologias-container-painel">
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"class="tecIcon"/>
+			</div>
+		</div>
 	</section>
-	<section class="personagens"></section>
-	<section class="albums"></section>
-	<footer class="rodape"></footer>
+
+	<section class="faq" id="FAQ">
+		<div class="faq-box">
+
+			<div class="pergunta">
+				<h2>Aqui ficam as perguntas.</h2>
+			</div>
+			<div class="resposta">
+				<p>E aqui as respostas.<br><br>Clica no botão pra ver algo.</p>
+			</div>
+			<div class="faq-botoes">
+				<button class="faq-botoes-botao" onclick="TrocarFAQ(false)"><</button>
+				<button class="faq-botoes-botao" onclick="TrocarFAQ(true)">></button>
+			</div>
+		</div>
+	</section>
+	
 	<script type="text/javascript" src="assets/script.js"></script>
 </body>
 </html>

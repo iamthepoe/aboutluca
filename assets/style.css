@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .cabecalho{
@@ -97,7 +98,7 @@ h1{
     background-size: cover;
 }
 
-.escritores-pensadores-container{
+.escritores-pensadores-container,  .tecnologias-container{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -107,7 +108,7 @@ h1{
 }
 
 
-.escritores-pensadores-container-painel{
+.escritores-pensadores-container-painel, .tecnologias-container-painel{
     display: flex;
     justify-content: center;
     overflow: auto;
@@ -118,7 +119,9 @@ h1{
     background-color: rgba(121, 1, 140, 0.7);
 
 }
-
+.personagens-container-painel{
+    width: 20%;
+}
 .nome-pensador{
     display: flex;
     position: absolute;
@@ -141,23 +144,80 @@ h1{
     color: rgb(154, 6, 128);
 }
 
-.animes-livros{
+
+.tecnologias{
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),
-    url(images/background02.jpg);
+    url(images/background05.jpg);
     background-size: cover;
 }
 
-.personagens{
-
+.tecnologias-container{
+    display: flex;
+    align-items: center;
 }
 
-.albums{
-
+.tecIcon{
+    align-self: center;
+    width: 10vw;
 }
 
-.albums, .animes-livros{
-    background-color: rgb(121, 1, 140);
+.faq{
+    font-family:'Josefin Sans', sans-serif ;
+    color: white;
+    display: flex;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),
+    url(images/background04.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
-.escritores-pensadores, .personagens{
-    background-color: rgb(76, 0, 112);
+
+.faq-box{
+    background-color: rgba(76, 0, 112, 0.75);
+    width: 50vw;
+    height: 60vh;
+    border: 6px solid black;
 }
+
+.pergunta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 0, 64, 0.75);
+    width: 100%;
+    height: 15vh;
+    overflow: auto;
+    text-align: center;
+
+}
+.resposta{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding: 30px;
+}
+.faq-botoes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.faq-botoes-botao{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    border: 2px solid white;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    padding: 1vw;
+}
+
+.faq-botoes-botao:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
