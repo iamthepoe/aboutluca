@@ -66,6 +66,13 @@ section{
     align-items: center;
 }
 
+.monika{
+    left: 86.7vw;
+    height: 60vh;
+    position: absolute;
+}
+
+
 
 h1{
     z-index: 1;
@@ -76,6 +83,43 @@ h1{
     font-family: 'Josefin Sans', sans-serif;
 
 }
+@media (min-width: 800px) and (max-width: 1000px){
+    h1, .pergunta{
+        font-size: 10px;
+    }
+
+    .escritores-pensadores-container-painel:hover .nome-pensador{
+        font-size: 10px;
+    }
+
+    .resposta{
+        font-size: 15px;
+    }
+    .sobremim-textbox{
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width: 400px) and (max-width: 799px){
+    h1, .pergunta{
+        font-size: 5px;
+    }
+
+    .escritores-pensadores-container-painel:hover .nome-pensador, .pergunta{
+        font-size: 5px;
+    }
+
+    .resposta{
+        font-size: 10px;
+    }
+
+    .sobremim-textbox{
+        font-size: 8px;
+    }
+}
+
+
 
 .sobremim-textbox{
     display: flex;
