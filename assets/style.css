@@ -67,10 +67,11 @@ section{
 }
 
 .monika{
-    left: 87.5%;
-    height: 60vh;
-    position: absolute;
+    height: 50vh;
+    overflow: unset;
+    
 }
+
 
 
 
@@ -83,7 +84,7 @@ h1{
     font-family: 'Josefin Sans', sans-serif;
 
 }
-@media (min-width: 800px) and (max-width: 1000px){
+@media (min-width: 800px) and (max-width: 1215px){
     h1, .pergunta{
         font-size: 10px;
     }
@@ -131,6 +132,7 @@ h1{
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     padding: 20px;
+    padding-right: 0px;
     width: 80vw;
     height: 60vh;
 }
@@ -155,7 +157,7 @@ h1{
 .escritores-pensadores-container-painel, .tecnologias-container-painel{
     display: flex;
     justify-content: center;
-    overflow: auto;
+    overflow: hidden;
     border: 6px solid black;
     margin: 10px;
     width: 30%;
@@ -265,3 +267,28 @@ h1{
     border: 2px solid black;
 }
 
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, purple);
+    border-radius: 6px;
+}
+
+body{
+    background-color: black;
+}
+
+.player{
+    border-radius: 5px;
+    border: solid 2px cyan;
+    color: cyan;
+    position: fixed;
+    top: 200px;
+    left: 20px;
+    text-align: center;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+}

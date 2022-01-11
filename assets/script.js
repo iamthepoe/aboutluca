@@ -47,3 +47,21 @@ function TrocarFAQ(direita){
 	pergunta.innerHTML = `<h2>${perguntas[contador]}</h2>`;
 	resposta.innerHTML = `<p>${respostas[contador]}</p>`;
 }
+//música
+
+var isPlaying = false;
+var button = document.querySelector('.player');
+var audio = document.querySelector('audio');
+function TocarMusica(){
+
+	isPlaying = (!isPlaying);
+
+	if(isPlaying){
+	  audio.play();	
+	  button.innerHTML = " || ";
+	}else{
+		audio.pause();
+		button.innerHTML = "&#9654;&#65039;";
+	}
+	
+}
